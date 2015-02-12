@@ -1,0 +1,74 @@
+'use strict';
+
+QUnit.module('Brace Styles Matter', {
+    beforeEach: function () {
+        console.group('Brace Styles Matter Group');
+        console.log('Start beforeEach...');
+    },
+    afterEach: function () {
+        console.log('...afterEach finished.');
+        console.groupEnd();
+    }
+});
+
+QUnit.test('allmanSimple - always returns 100', function (assert) {
+    ////////////////////////////////////////////////////////////////////////////
+    // ARRANGE
+    var expected = 100
+        , result;
+
+    ////////////////////////////////////////////////////////////////////////////
+    // ACT
+    result = allmanSimple();
+
+    ////////////////////////////////////////////////////////////////////////////
+    // ASSERT
+    assert.strictEqual(result, expected, 'Assert equality');
+});
+
+QUnit.test('knRSimple - always returns 100', function (assert) {
+    ////////////////////////////////////////////////////////////////////////////
+    // ARRANGE
+    var expected = 100
+        , result;
+
+    ////////////////////////////////////////////////////////////////////////////
+    // ACT
+    result = knRSimple();
+
+    ////////////////////////////////////////////////////////////////////////////
+    // ASSERT
+    assert.strictEqual(result, expected, 'Assert equality');
+});
+
+QUnit.test('allmanComplex - always returns 100', function (assert) {
+    ////////////////////////////////////////////////////////////////////////////
+    // ARRANGE
+    var expected = 100
+        , result;
+
+    ////////////////////////////////////////////////////////////////////////////
+    // ACT
+    result = allmanComplex();
+
+    ////////////////////////////////////////////////////////////////////////////
+    // ASSERT
+    assert.ok(true, 'NOT YET RUNNING ALLMANCOMPLEX TEST');
+    //assert.strictEqual(result.myResult, expected, 'Assert equality');
+});
+
+
+QUnit.test('knRComplex - always returns 100', function (assert) {
+    ////////////////////////////////////////////////////////////////////////////
+    // ARRANGE
+    var expected = 100
+        , result;
+
+    ////////////////////////////////////////////////////////////////////////////
+    // ACT
+    result = knRComplex();
+
+    ////////////////////////////////////////////////////////////////////////////
+    // ASSERT
+    assert.strictEqual(result.myResult, expected, 'Assert equality');
+});
